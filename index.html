@@ -1,79 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Joas Röthig : Home</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
-    <!-- Font Awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Slick slider -->
-    <link href="assets/css/slick.css" rel="stylesheet">
-    <!-- Gallery Lightbox -->
-    <link href="assets/css/magnific-popup.css" rel="stylesheet">
-    <!-- Theme color -->
-    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
 
-    <!-- Main Style -->
-    <link href="style.css" rel="stylesheet">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Joas Röthig : Home</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico" />
+	<!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Slick slider -->
+	<link href="assets/css/slick.css" rel="stylesheet">
+	<!-- Gallery Lightbox -->
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+	<!-- Theme color -->
+	<link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
 
-    <!-- Fonts -->
+	<!-- Main Style -->
+	<link href="style.css" rel="stylesheet">
 
-    <!-- Open Sans for body font -->
+	<!-- Fonts -->
+
+	<!-- Open Sans for body font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
-    <!-- Poppins for Title -->
-  	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
- 
- 
-	
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+	<!-- Poppins for Title -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-  	
-  	<!-- Start Header -->
+</head>
+
+<body onload="checkLanguage()">
+
+	<!-- Start Header -->
 	<header id="mu-header" class="" role="banner">
 		<div class="container">
 			<nav class="navbar navbar-default mu-navbar">
-		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
 
-		      <!-- Text Logo -->
-		      <a class="navbar-brand" href="#">Joas</a>
+						<!-- Text Logo -->
+						<a class="navbar-brand" href="#">JoasR</a>
 
-		      <!-- Image Logo -->
-		      <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a> -->
+						<!-- Image Logo -->
+						<!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a> -->
 
 
-		    </div>
+					</div>
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      	<ul class="nav navbar-nav mu-menu navbar-right">
-			        <li><a href="#">HOME</a></li>
-			        <li><a href="#mu-about">OVER MIJ</a></li>
-		            <li><a href="#mu-portfolio">PORTFOLIO</a></li>
-		            <li><a href="#mu-contact">CONTACT</a></li>
-		      	</ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav mu-menu navbar-right">
+							<li><a href="#">HOME</a></li>
+							<li><a id="navAbout" href="#mu-about">OVER MIJ</a></li>
+							<li><a href="#mu-portfolio">PORTFOLIO</a></li>
+							<li><a href="#mu-contact">CONTACT</a></li>
+							<li id="english"><a href="#eng" onclick='hideButton()' data-reload>ENGLISH</a></li>
+							<li id="dutch"><a href="#nl" onclick='hideButton()' data-reload>NEDERLANDS</a></li>
+
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
 		</div>
 	</header>
 	<!-- End Header -->
@@ -90,28 +96,28 @@
 						<!-- Start text slide -->
 						<div class="mu-featured-slider-wrapper">
 							<div class="mu-featured-slider" id="typed-strings">
-								<p>Ik ben <span>Applicatieontwikkelaar</span></p>
-								<p>Ik ben <span>Programmeur</span></p>
-								<p>Ik heb <span>gestudeerd aan Hogeschool PXL</span></p>
+								<p id="appDeve">I am <span>Software Developer</span></p>
+								<p id="programmers">I am <span>Programmer</span></p>
+								<p id="PXLh">I studied at <span>PXL College</span></p>
 							</div>
 							<span id="typed"></span>
 						</div>
 						<!-- Start text slide -->
-						
+
 						<div class="mu-featured-content">
-							<p>The harder you work for something, the greater you'll feel when you achieve it</p>
+							<p id="quote">Hoe harder je werkt voor iets, hoe trotser je je voelt als je het bereikt</p>
 						</div>
 
 					</div>
-				</div>			
+				</div>
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- Start Featured Slider -->
-	
+
 	<!-- Start main content -->
-		
+
 	<main role="main">
 
 		<!-- Start About -->
@@ -122,9 +128,34 @@
 						<div class="mu-about-area">
 
 							<div class="mu-about-header">
-								<h2 class="mu-heading-title">OVER MIJ</h2>
+								<h2 id="about" class="mu-heading-title">OVER MIJ</h2>
 								<span class="mu-header-dot"></span>
-								<p>Mijn naam is Joas Röthig. Momenteel 22 jaar oud en geboren in Maastricht. Ik woon in Riemst samen met mijn ouders. Na een klein jaar op de universiteit van UHasselt de opleiding Informatica gevolgd te hebben, ben ik toch in het derde jaar van de bacheloropleiding Toegepaste Informatica met afstudeerrichting Applicatieontwikkeling geraakt. In het secundair heb ik Latijn moderne talen gedaan. Het was dus een heel andere richting toen ik op de universiteit van UHasselt begon. Deze stap was in het begin voor mij iets te groot, maar mijn interesse voor informatica in het algemeen is hier zeker niet door verminderd. Daarom dat ik besloten heb om de hogeschool opleiding Toegepaste Informatica aan de PXL te beginnen.</p>
+								<div>
+									<p id="intro">Mijn naam is Joas Röthig. Momenteel 22 jaar oud en geboren in
+										Maastricht. Ik woon
+										in Riemst samen met mijn ouders. Na een klein jaar op de universiteit van
+										UHasselt de opleiding Informatica gevolgd te hebben, ben ik toch in het derde
+										jaar van de bacheloropleiding Toegepaste Informatica met afstudeerrichting
+										Applicatieontwikkeling geraakt. In het secundair heb ik Latijn moderne talen
+										gedaan. Het was dus een heel andere richting toen ik op de universiteit van
+										UHasselt begon. Deze stap was in het begin voor mij iets te groot, maar mijn
+										interesse voor informatica in het algemeen is hier zeker niet door verminderd.
+										Daarom dat ik besloten heb om de hogeschool opleiding Toegepaste Informatica aan
+										de PXL te beginnen.</p>
+									<p id="intro2">Naast informatica speel ik heel graag videospelletjes en doe ik ook
+										aan voetbal. Het competitieve gevoel is iets wat voor mij heel belangrijk is. Zo
+										ben ik als persoon iemand die helemaal niet graag verliest. Vandaar het
+										voetballen en het gamen.</p>
+									<p id="intro3">Verder zie ik mezelf meer als een introvert persoon, die toch goed
+										functioneert als een teamspeler. Ik ben iemand die altijd zeer gemotiveerd te
+										werk gaat en goed kan luisteren. Bovendien zie ik mezelf als iemand die
+										perfectionistisch is en altijd de puntjes op de i wil zetten.</p>
+									<a href="assets\Thesis\Eindwerk_Rothig_Joas.pdf" class="mu-resume-btn">Download
+										Thesis</a>
+									<a href="https://transformdata.neotalogic.com/a/jr/FlightHelper"
+										class="mu-resume-btn">Flight Helper
+									</a>
+								</div>
 							</div>
 
 							<!-- Start About Us Content -->
@@ -132,44 +163,48 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="mu-about-content-left">
-											<img class="mu-profile-img" src="assets\images\ProfielFotoJoasRothig.jpg" alt="Profile Image">
+											<img class="mu-profile-img" src="assets\images\ProfielFotoJoasRothig.jpg"
+												alt="Profile Image">
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="mu-about-content-right">
-			
+
 											<!-- Start skills progress bar -->
 
-						                  	<div class="mu-skill-progress-bar">
-						                  		<h3>Skills</h3>
-							                    <span>Html5</span>
-							                    <div class="mu-pro-bar mu-html5-bar">
-							                      
-							                    </div>
-							                    <span>css</span>
-							                    <div class="mu-pro-bar mu-css-bar">
-							                     
-							                    </div>
-							                    <span>Java</span>
-							                    <div class="mu-pro-bar mu-photoshop-bar">
-							                    </div>
-							                    <span>C#</span>
-							                    <div class="mu-pro-bar mu-wordpress-bar">
-							                    </div>
-							                    <span>Javascript</span>
-							                    <div class="mu-pro-bar mu-jquery-bar">
-							                    </div>
-						                  	</div>
+											<div class="mu-skill-progress-bar">
+												<h3>Skills</h3>
+												<span>Html5</span>
+												<div class="mu-pro-bar mu-html5-bar">
 
-						                  	<!-- Start Social Media -->
-						                  	<div class="mu-social-media">
-						                  		<h3>Social</h3>
-						                  		<a href="https://www.facebook.com/joas.rothig/"><i class="fa fa-facebook"></i></a>
-						                  		<a href="https://www.linkedin.com/in/joas-r%C3%B6thig-941298175/"><i class="fa fa-linkedin"></i></a>
-						                  	</div>
+												</div>
+												<span>CSS</span>
+												<div class="mu-pro-bar mu-css-bar">
 
-						                  	<!-- Download Ressume Button -->
-						                  	<a href="assets\CV\Rothig_Joas_CV_English (4).pdf" class="mu-resume-btn">Download mijn CV</a>
+												</div>
+												<span>Java</span>
+												<div class="mu-pro-bar mu-photoshop-bar">
+												</div>
+												<span>C#</span>
+												<div class="mu-pro-bar mu-wordpress-bar">
+												</div>
+												<span>Javascript</span>
+												<div class="mu-pro-bar mu-jquery-bar">
+												</div>
+											</div>
+
+											<!-- Start Social Media -->
+											<div class="mu-social-media">
+												<h3>Social</h3>
+												<a href="https://www.facebook.com/joas.rothig/"><i
+														class="fa fa-facebook"></i></a>
+												<a href="https://www.linkedin.com/in/joas-r%C3%B6thig-941298175/"><i
+														class="fa fa-linkedin"></i></a>
+											</div>
+
+											<!-- Download Ressume Button -->
+											<a href="assets\CV\Rothig_Joas_CV_English.pdf"
+												class="mu-resume-btn">Download CV</a>
 
 										</div>
 									</div>
@@ -192,185 +227,213 @@
 						<div class="mu-portfolio-area">
 
 							<div class="mu-portfolio-header">
-								<h2 class="mu-heading-title">MIJN PORTFOLIO</h2>
+								<h2 id="myPortfolio" class="mu-heading-title">MIJN PORTFOLIO</h2>
 								<span class="mu-header-dot"></span>
 							</div>
 
 							<!-- Start Portfolio Filter -->
 							<div class="mu-portfolio-filter-area">
 								<ul class="mu-simplefilter">
-					                <li class="active" data-filter="all">Alles</li>
-					                <li data-filter="1">Internationalisering</li>
-					                <li data-filter="2">Seminaries</li>
-					                <li data-filter="3">Innovatie</li>
-					                <li data-filter="4">Persoonlijke Ontwikkeling</li>
-									<li data-filter="5">Extra Activiteiten</li>
-									<li data-filter="6">Portfolio</li>
-					            </ul>
+									<li id="all" class="active" data-filter="all">Alles</li>
+									<li id="international" data-filter="1">Internationalisering</li>
+									<li id="seminars" data-filter="2">Seminaries</li>
+									<li id="innovation" data-filter="3">Innovatie</li>
+									<li id="pd" data-filter="4">Persoonlijke Ontwikkeling</li>
+									<li id="extraAct" data-filter="5">Extra Activiteiten</li>
+									<li id="portf" data-filter="6">Portfolio</li>
+								</ul>
 							</div>
 
 							<!-- Start Portfolio Content -->
 							<div class="mu-portfolio-content">
 								<div class="filtr-container">
 
-					                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="1">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\portfolio\Berlijn.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">Studiereis Paderborn en Berlijn</h4>
-					                    	<a class="mu-filter-imglink" href="assets\images\portfolio\Berlijn.jpg" title="Internationalisering"><i class="fa fa-search"></i></a>
-					                    </div>
-					                </div>
-
-					                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\qns.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">Quality & Speed: Code retreat</h4>
-					                    	<a class="mu-filter-imglink" href="assets\images\qns.jpg" title="Seminaries"><i class="fa fa-search"></i></a>
-					                    </div>
-					                </div>
-
-					                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\ericsson.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">Ericsson: Inleiding tot 5G</h4>
-					                    	<a class="mu-filter-imglink" href="assets\images\ericsson.jpg" title="Seminaries"><i class="fa fa-search"></i></a>
-					                    </div>
-					                </div>
-
-					                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\axxes.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">Axxes: IoT with Akka.net</h4>
-					                    	<a class="mu-filter-imglink" href="assets\images\axxes.jpg" title="Seminaries"><i class="fa fa-search"></i></a>
-					                    </div>
-					                </div>
-
-					                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\reactnative.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">Appfoundry: React Native</h4>
-					                    	<a class="mu-filter-imglink" href="assets\images\reactnative.jpg" title="Seminaries"><i class="fa fa-search"></i></a>
-					                    </div>
-					                </div>
-
-					                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\droneport.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">IT@Breakfast: Droneport</h4>
-					                    	<a class="mu-filter-imglink" href="assets\images\droneport.jpg" title="Seminaries"><i class="fa fa-search"></i></a>
-					                    </div>
-					                </div>
-
-					                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\aca.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">ACA-IT: test Driven Development</h4>
-					                    	<a class="mu-filter-imglink" href="assets\images\aca.jpg" title="Seminaries"><i class="fa fa-search"></i></a>
-					                    </div>
-					                </div>
-
-					                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\androidvsios.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">Appfoundry: Android vs IOS</h4>
-					                    	<a class="mu-filter-imglink" href="assets\images\androidvsios.jpg" title="Seminaries"><i class="fa fa-search"></i></a>
-					                    </div>
-					                </div>
-
-					                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\ctg.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">CTG: Application Performance</h4>
-					                    	<a class="mu-filter-imglink" href="assets\images\ctg.jpg" title="Seminaries"><i class="fa fa-search"></i></a>
-					                    </div>
+									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="1">
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\portfolio\Berlijn.jpg"
+												alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 id="studyTrip" class="mu-filter-item-title">Studiereis Paderborn en
+												Berlijn</h4>
+											<a class="mu-filter-imglink" href="assets\images\portfolio\Berlijn.jpg"
+												title="Internationalisering"><i class="fa fa-search"></i></a>
+										</div>
 									</div>
-									
+
 									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\facebookenik.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">Digital@Breakfast: Facebook</h4>
-					                    	<a class="mu-filter-imglink" href="assets\images\facebookenik.jpg" title="Seminaries"><i class="fa fa-search"></i></a>
-					                    </div>
-					                </div>
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\qns.jpg" alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 class="mu-filter-item-title">Quality & Speed: Code retreat</h4>
+											<a class="mu-filter-imglink" href="assets\images\qns.jpg"
+												title="Seminaries"><i class="fa fa-search"></i></a>
+										</div>
+									</div>
+
+									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\ericsson.jpg" alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 id="ericsson" class="mu-filter-item-title">Ericsson: Inleiding tot 5G
+											</h4>
+											<a class="mu-filter-imglink" href="assets\images\ericsson.jpg"
+												title="Seminaries"><i class="fa fa-search"></i></a>
+										</div>
+									</div>
+
+									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\axxes.jpg" alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 class="mu-filter-item-title">Axxes: IoT with Akka.net</h4>
+											<a class="mu-filter-imglink" href="assets\images\axxes.jpg"
+												title="Seminaries"><i class="fa fa-search"></i></a>
+										</div>
+									</div>
+
+									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\reactnative.jpg" alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 class="mu-filter-item-title">Appfoundry: React Native</h4>
+											<a class="mu-filter-imglink" href="assets\images\reactnative.jpg"
+												title="Seminaries"><i class="fa fa-search"></i></a>
+										</div>
+									</div>
+
+									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\droneport.jpg" alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 class="mu-filter-item-title">IT@Breakfast: Droneport</h4>
+											<a class="mu-filter-imglink" href="assets\images\droneport.jpg"
+												title="Seminaries"><i class="fa fa-search"></i></a>
+										</div>
+									</div>
+
+									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\aca.jpg" alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 class="mu-filter-item-title">ACA-IT: Test Driven Development</h4>
+											<a class="mu-filter-imglink" href="assets\images\aca.jpg"
+												title="Seminaries"><i class="fa fa-search"></i></a>
+										</div>
+									</div>
+
+									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\androidvsios.jpg"
+												alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 class="mu-filter-item-title">Appfoundry: Android vs IOS</h4>
+											<a class="mu-filter-imglink" href="assets\images\androidvsios.jpg"
+												title="Seminaries"><i class="fa fa-search"></i></a>
+										</div>
+									</div>
+
+									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\ctg.jpg" alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 class="mu-filter-item-title">CTG: Application Performance</h4>
+											<a class="mu-filter-imglink" href="assets\images\ctg.jpg"
+												title="Seminaries"><i class="fa fa-search"></i></a>
+										</div>
+									</div>
+
+									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="2">
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\facebookenik.jpg"
+												alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 class="mu-filter-item-title">Digital@Breakfast: Facebook</h4>
+											<a class="mu-filter-imglink" href="assets\images\facebookenik.jpg"
+												title="Seminaries"><i class="fa fa-search"></i></a>
+										</div>
+									</div>
 
 									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="3">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\ai.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">Innovatieroute: AI</h4>
-					                    	<a class="mu-filter-imglink" href="assets\images\ai.jpg" title="Innovatie"><i class="fa fa-search"></i></a>
-					                    </div>
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\ai.jpg" alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 id="innovationRoute" class="mu-filter-item-title">Innovatieroute: AI
+											</h4>
+											<a class="mu-filter-imglink" href="assets\images\ai.jpg"
+												title="Innovatie"><i class="fa fa-search"></i></a>
+										</div>
 									</div>
-									
+
 									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="4">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\projectweek.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">Projectweek</h4>
-					                    	<a class="mu-filter-imglink" href="assets\images\projectweek.jpg" title="Persoonlijke Ontwikkeling"><i class="fa fa-search"></i></a>
-					                    </div>
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\projectweek.jpg" alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 id="projectWeek" class="mu-filter-item-title">Projectweek</h4>
+											<a class="mu-filter-imglink" href="assets\images\projectweek.jpg"
+												title="Persoonlijke Ontwikkeling"><i class="fa fa-search"></i></a>
+										</div>
 									</div>
-									
+
 									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="4">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\pop.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">POP-Sessies</h4>
-					                    	<a class="mu-filter-imglink" href="assets\images\pop.jpg" title="Persoonlijke Ontwikkeling"><i class="fa fa-search"></i></a>
-					                    </div>
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\pop.jpg" alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 id="pop" class="mu-filter-item-title">POP-Sessies</h4>
+											<a class="mu-filter-imglink" href="assets\images\pop.jpg"
+												title="Persoonlijke Ontwikkeling"><i class="fa fa-search"></i></a>
+										</div>
 									</div>
-									
+
 									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="5">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\neota.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">Neota Logic: Corona App</h4>
-					                    	<a class="mu-filter-link" href="https://transformdata.neotalogic.com/a/jr/corona"><i class="fa fa-link"></i></a>
-					                    	<a class="mu-filter-imglink" href="assets\images\neota.jpg" title="Extra Activiteiten"><i class="fa fa-search"></i></a>
-					                    </div>
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\neota.jpg" alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 class="mu-filter-item-title">Neota Logic: Corona App</h4>
+											<a class="mu-filter-link"
+												href="https://transformdata.neotalogic.com/a/jr/corona"><i
+													class="fa fa-link"></i></a>
+											<a class="mu-filter-imglink" href="assets\images\neota.jpg"
+												title="Extra Activiteiten"><i class="fa fa-search"></i></a>
+										</div>
 									</div>
-									
+
 									<div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="6">
-					                	<div class="mu-item-thumbonail">
-					                		<img class="img-responsive" src="assets\images\xfactor.jpg" alt="image">
-					                	</div>
-					                	<div class="mu-filter-item-content">
-					                    	<h4 class="mu-filter-item-title">I-Talent: Portfolio</h4>
-					                    	<a class="mu-filter-link" href="assets\Portfolio\ITalentPortfolio_Joas_Rothig.docx"><i class="fa fa-link"></i></a>
-					                    	<a class="mu-filter-imglink" href="assets\images\xfactor.jpg" title="Portfolio"><i class="fa fa-search"></i></a>
-					                    </div>
-					                </div>
-					            </div>
+										<div class="mu-item-thumbonail">
+											<img class="img-responsive" src="assets\images\xfactor.jpg" alt="image">
+										</div>
+										<div class="mu-filter-item-content">
+											<h4 class="mu-filter-item-title">I-Talent: Portfolio</h4>
+											<a class="mu-filter-link"
+												href="assets\Portfolio\ITalentPortfolio_Joas_Rothig.docx"><i
+													class="fa fa-link"></i></a>
+											<a class="mu-filter-imglink" href="assets\images\xfactor.jpg"
+												title="Portfolio"><i class="fa fa-search"></i></a>
+										</div>
+									</div>
+								</div>
 							</div>
 							<!-- End Portfolio Content -->
 							<div class="mu-contact-header">
 								<span class="mu-header-dot"></span>
-								<p>Had u graag meer informatie over de activiteiten? Dan kan u altijd mijn portfolio downloaden</p>
-								<a href="assets\Portfolio\ITalentPortfolio_Joas_Rothig.docx" class="mu-resume-btn">Download mijn portfolio</a>
+								<p id="extraInfo">Had u graag meer informatie over de activiteiten? Dan kan u altijd
+									mijn portfolio
+									downloaden</p>
+								<a href="assets\Portfolio\ITalentPortfolio_Joas_Rothig.docx"
+									class="mu-resume-btn">Download Portfolio</a>
 							</div>
 						</div>
 					</div>
@@ -387,9 +450,11 @@
 						<div class="mu-contact-area">
 
 							<div class="mu-contact-header">
-								<h2 class="mu-heading-title">CONTACTEER ME</h2>
+								<h2 id="contactMe" class="mu-heading-title">CONTACTEER ME</h2>
 								<span class="mu-header-dot"></span>
-								<p>Heeft u vragen? Kan ik u ergens mee van dienst zijn? Dan kunt u me altijd contacteren</p>
+								<p id="extraQuestions">Heeft u vragen? Kan ik u ergens mee van dienst zijn? Dan kunt u
+									me altijd contacteren
+								</p>
 							</div>
 
 							<!-- Start Contact Content -->
@@ -421,60 +486,169 @@
 
 											</div>
 										</div>
-									</div>	
-							<!-- End Contact Content -->
+									</div>
+									<!-- End Contact Content -->
 
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
 		</section>
 		<!-- End Contact -->
 
 	</main>
-	
-	<!-- End main content -->	
-			
-			
+
+	<!-- End main content -->
+
+
 	<!-- Start footer -->
 	<footer id="mu-footer" role="contentinfo">
-			<div class="container">
-				<div class="mu-footer-area">
-					<p class="mu-copy-right">&copy; Copyright <a rel="nofollow">Joas Röthig</a>. All rights reserved.</p>
-				</div>
+		<div class="container">
+			<div class="mu-footer-area">
+				<p class="mu-copy-right">&copy; Copyright <a rel="nofollow">Joas Röthig</a>. All rights reserved.</p>
 			</div>
+		</div>
 
 	</footer>
 	<!-- End footer -->
 
-	
-	
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!-- Bootstrap -->
+	<script src="assets/js/bootstrap.min.js"></script>
 	<!-- Slick slider -->
-    <script type="text/javascript" src="assets/js/slick.min.js"></script>
-    <!-- Filterable Gallery js -->
-    <script type="text/javascript" src="assets/js/jquery.filterizr.min.js"></script>
-    <!-- Gallery Lightbox -->
-    <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!-- Ajax contact form  -->
-    <script type="text/javascript" src="assets/js/app.js"></script>
+	<script type="text/javascript" src="assets/js/slick.min.js"></script>
+	<!-- Filterable Gallery js -->
+	<script type="text/javascript" src="assets/js/jquery.filterizr.min.js"></script>
+	<!-- Gallery Lightbox -->
+	<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Ajax contact form  -->
+	<script type="text/javascript" src="assets/js/app.js"></script>
 	<!-- Featured Slider -->
-    <script type="text/javascript" src="assets/js/typed.min.js"></script>
-    <!-- On scroll JS  -->
-    <script src="assets/js/jquery.appear.js"></script>
+	<script type="text/javascript" src="assets/js/typed.min.js"></script>
+	<!-- On scroll JS  -->
+	<script src="assets/js/jquery.appear.js"></script>
 	<!-- Progress Bar -->
-    <script type="text/javascript" src="assets/js/jquery.lineProgressbar.js"></script>
-    
-	
-    <!-- Custom js -->
+	<script type="text/javascript" src="assets/js/jquery.lineProgressbar.js"></script>
+
+
+	<!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 
-	
-	
-    
-  </body>
+
+
+	<script>
+		//Define language reload anchors
+		var dataReload = document.querySelectorAll("[data-reload]");
+
+		//Language translations
+		var language = {
+			nl: {
+				introText: "Mijn naam is Joas Röthig. Momenteel 22 jaar oud en geboren in Maastricht. Ik woon in Riemst samen met mijn ouders. Na een klein jaar op de universiteit van UHasselt de opleiding Informatica gevolgd te hebben, ben ik toch in het derde jaar van de bacheloropleiding Toegepaste Informatica met afstudeerrichting Applicatieontwikkeling geraakt. In het secundair heb ik Latijn moderne talen gedaan. Het was dus een heel andere richting toen ik op de universiteit van UHasselt begon. Deze stap was in het begin voor mij iets te groot, maar mijn interesse voor informatica in het algemeen is hier zeker niet door verminderd. Daarom dat ik besloten heb om de hogeschool opleiding Toegepaste Informatica aan de PXL te beginnen.",
+				introText2: "Naast informatica speel ik heel graag videospelletjes en doe ik ook aan voetbal. Het competitieve gevoel is iets wat voor mij heel belangrijk is. Zo ben ik als persoon iemand die helemaal niet graag verliest. Vandaar het voetballen en het gamen. ",
+				introText3: "Verder zie ik mezelf meer als een introvert persoon, die toch goed functioneert als een teamspeler. Ik ben iemand die altijd zeer gemotiveerd te werk gaat en goed kan luisteren. Bovendien zie ik mezelf als iemand die perfectionistisch is en altijd de puntjes op de i wil zetten.",
+				aboutMe: "Over Mij",
+				navAbout: "OVER MIJ",
+				quote: "Hoe harder je werkt voor iets, hoe trotser je bent als je het bereikt",
+				myPortfolio: "MIJN PORTFOLIO",
+				all: "Alles",
+				international: "Internationalisatie",
+				seminars: "Seminaries",
+				innovation: "Innovatie",
+				pd: "Persoonlijke Ontwikkeling",
+				extraAct: "Extra Activiteiten",
+				portf: "Portfolio",
+				studyTrip: "Studiereis Paderborn en Berlijn",
+				ericsson: "Ericsson: Introductie tot 5G",
+				innovationRoute: "Innovatieroute: AI",
+				projectWeek: "Projectweek",
+				pop: "POP-sessies",
+				extraInfo: "Had u graag meer informatie over de activiteiten? Dan kan u altijd mijn portfolio downloaden",
+				contactMe: "Contacteer me",
+				extraQuestions: "Heeft u vragen? Kan ik u ergens mee van dienst zijn? Dan kunt u me altijd contacteren!"
+
+			},
+			eng: {
+				introText: "My name is Joas Röthig, 22 years old and born in Maastricht, Netherlands. Currently I live in Riemst, Belgium, together with my parents. After some obstacles during my year at the UHasselt University, I managed to succesfully obtain my bachelor's degree in applied computer science with specialization in application development (Full Stack). In high school I studied Latin-modern languages, which made the step to computer science very big. I took this step because interests in computers and how they work has always been present. During my year of university my interests in computers and programming sparked, which led to me starting my bachelor's degree at the PXL college in Hasselt, Belgium.",
+				introText2: "In my spare time I like to play videogames and play football. I like the competitive feel and love winning. I see myself as an introvert person, but someone who is really good at listening and can perform well as a teamplayer. Besides that I am perfectionistic and someone who is motivated to work.",
+				introText3: "I finished my internship at Transform Data International. During my time there I worked with the no-code platform Neota Logic and made a web application that helps users ask for compensation when their flight has been delayed. Furthermore research about no-code has been done and a comparisson about no-code and traditional programming was made. Below you can download my thesis (Dutch) and find a link to the Flight Helper application.",
+				aboutMe: "About Me",
+				navAbout: "ABOUT ME",
+				quote: "The harder you work for something, the greater you'll feel when you achieve it",
+				myPortfolio: "MY PORTFOLIO",
+				all: "All",
+				international: "International",
+				seminars: "Seminars",
+				innovation: "Innovation",
+				pd: "Personal Development",
+				extraAct: "Extra Activities",
+				portf: "Portfolio",
+				studyTrip: "Study trip Paderborn and Berlin",
+				ericsson: "Ericsson: Introduction to 5G",
+				innovationRoute: "Innovation Route: AI",
+				projectWeek: "Project week",
+				pop: "POP-sessions",
+				extraInfo: "Would you like some more information about each of the activities? You can always download my portfolio (Dutch) by clicking the button below",
+				contactMe: "CONTACT ME",
+				extraQuestions: "Do you have any questions? Can I assist you with something? You can always contact me!"
+			}
+		};
+		//Define language via windows hash
+		if (window.location.hash) {
+			if (window.location.hash === "#eng") {
+				intro.textContent = language.eng.introText;
+				intro2.textContent = language.eng.introText2;
+				intro3.textContent = language.eng.introText3;
+				about.textContent = language.eng.aboutMe;
+				navAbout.textContent = language.eng.navAbout;
+				quote.textContent = language.eng.quote;
+				myPortfolio.textContent = language.eng.myPortfolio;
+				all.textContent = language.eng.all;
+				international.textContent = language.eng.international;
+				seminars.textContent = language.eng.seminars;
+				innovation.textContent = language.eng.innovation;
+				pd.textContent = language.eng.pd;
+				extraAct.textContent = language.eng.extraAct;
+				portf.textContent = language.eng.portf;
+				studyTrip.textContent = language.eng.studyTrip;
+				ericsson.textContent = language.eng.ericsson;
+				innovationRoute.textContent = language.eng.innovationRoute;
+				projectWeek.textContent = language.eng.projectWeek;
+				pop.textContent = language.eng.pop;
+				extraInfo.textContent = language.eng.extraInfo;
+				contactMe.textContent = language.eng.contactMe;
+				extraQuestions.textContent = language.eng.extraQuestions;
+			}
+		}
+
+		//Define language onclick illiteration
+		var englishButton = document.getElementById("english");
+		var dutchButton = document.getElementById("dutch");
+
+		function hideButton() {
+			if (dutchButton.style.display === "none") {
+				dutchButton.style.display = "block";
+				englishButton.style.display = "none";
+			} else {
+				dutchButton.style.display = "none";
+				englishButton.style.display = "block";
+			}
+		}
+
+		function checkLanguage() {
+			if (window.location.hash === "#eng") {
+				dutchButton.style.display = "block";
+				englishButton.style.display = "none";
+			}
+		}
+
+		window.onhashchange = function () {
+			window.location.reload(true);
+		}
+	</script>
+</body>
+
 </html>
