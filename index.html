@@ -73,7 +73,7 @@
 							<li><a id="navAbout" href="#mu-about">OVER MIJ</a></li>
 							<li><a href="#mu-portfolio">PORTFOLIO</a></li>
 							<li><a href="#mu-contact">CONTACT</a></li>
-							<li id="english"><a href="#eng" onclick='hideButton()' data-reload>ENGLISH</a></li>
+							<li id="english"><a href="#en" onclick='hideButton()' data-reload>ENGLISH</a></li>
 							<li id="dutch"><a href="#nl" onclick='hideButton()' data-reload>NEDERLANDS</a></li>
 
 						</ul>
@@ -571,7 +571,7 @@
 				extraQuestions: "Heeft u vragen? Kan ik u ergens mee van dienst zijn? Dan kunt u me altijd contacteren!"
 
 			},
-			eng: {
+			en: {
 				introText: "My name is Joas Röthig, 22 years old and born in Maastricht, the Netherlands. Currently I live in Riemst, Belgium, together with my parents. After some obstacles during my year at the UHasselt University, I managed to succesfully obtain my bachelor's degree in applied computer science with specialization in application development (Full Stack). In high school I studied Latin-modern languages, which made the step to computer science very big. I took this step because my interests in computers and how they work have always been present. During my year of university my interests in computers and programming sparked, which led to me starting my bachelor's degree at the PXL college in Hasselt, Belgium.",
 				introText2: "In my spare time I like to play videogames and football. Mainly because I enjoy competeting and love winning. I see myself more as an introvert person, but someone who is really good at listening and can perform well as a teamplayer. Besides that I am perfectionistic and someone who is motivated to work.",
 				introText3: "I finished my internship at Transform Data International located in Maastricht. During my time there I worked with the no-code platform Neota Logic and made a web application that helps users ask for compensation when their flight has been delayed. Furthermore research about no-code has been done and a comparisson about no-code and traditional programming was made. Below you can download my thesis (Dutch) and find a link to the Flight Helper application.",
@@ -598,29 +598,29 @@
 		};
 		//Define language via windows hash
 		if (window.location.hash) {
-			if (window.location.hash === "#eng") {
-				intro.textContent = language.eng.introText;
-				intro2.textContent = language.eng.introText2;
-				intro3.textContent = language.eng.introText3;
-				about.textContent = language.eng.aboutMe;
-				navAbout.textContent = language.eng.navAbout;
-				quote.textContent = language.eng.quote;
-				myPortfolio.textContent = language.eng.myPortfolio;
-				all.textContent = language.eng.all;
-				international.textContent = language.eng.international;
-				seminars.textContent = language.eng.seminars;
-				innovation.textContent = language.eng.innovation;
-				pd.textContent = language.eng.pd;
-				extraAct.textContent = language.eng.extraAct;
-				portf.textContent = language.eng.portf;
-				studyTrip.textContent = language.eng.studyTrip;
-				ericsson.textContent = language.eng.ericsson;
-				innovationRoute.textContent = language.eng.innovationRoute;
-				projectWeek.textContent = language.eng.projectWeek;
-				pop.textContent = language.eng.pop;
-				extraInfo.textContent = language.eng.extraInfo;
-				contactMe.textContent = language.eng.contactMe;
-				extraQuestions.textContent = language.eng.extraQuestions;
+			if (window.location.hash === "#en") {
+				intro.textContent = language.en.introText;
+				intro2.textContent = language.en.introText2;
+				intro3.textContent = language.en.introText3;
+				about.textContent = language.en.aboutMe;
+				navAbout.textContent = language.en.navAbout;
+				quote.textContent = language.en.quote;
+				myPortfolio.textContent = language.en.myPortfolio;
+				all.textContent = language.en.all;
+				international.textContent = language.en.international;
+				seminars.textContent = language.en.seminars;
+				innovation.textContent = language.en.innovation;
+				pd.textContent = language.en.pd;
+				extraAct.textContent = language.en.extraAct;
+				portf.textContent = language.en.portf;
+				studyTrip.textContent = language.en.studyTrip;
+				ericsson.textContent = language.en.ericsson;
+				innovationRoute.textContent = language.en.innovationRoute;
+				projectWeek.textContent = language.en.projectWeek;
+				pop.textContent = language.en.pop;
+				extraInfo.textContent = language.en.extraInfo;
+				contactMe.textContent = language.en.contactMe;
+				extraQuestions.textContent = language.en.extraQuestions;
 			}
 		}
 
@@ -639,7 +639,7 @@
 		}
 
 		function checkLanguage() {
-			if (window.location.hash === "#eng") {
+			if (window.location.hash === "#en") {
 				dutchButton.style.display = "block";
 				englishButton.style.display = "none";
 			}
