@@ -82,10 +82,19 @@
 			});
 
 			$('.mu-jquery-bar').LineProgressbar({
-				percentage: 55,
+				percentage: 80,
 				triggerOnce: true
 			});
 
+			$('.mu-sql-bar').LineProgressbar({
+				percentage: 75,
+				triggerOnce: true
+			});
+
+			$('.mu-react-bar').LineProgressbar({
+				percentage: 40,
+				triggerOnce: true
+			});
 		});
 
 
